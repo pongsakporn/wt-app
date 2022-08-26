@@ -5,10 +5,10 @@ import Weather from './components/Weather';
 export default function App() {
 
   return (
-<View style={styles.container}>
-  <Weather zipCode="90110"/>
-  <StatusBar style="auto" />
-</View>
+<View style = { styles.container } >
+        <Weather zipCode = "90110" / >
+        <StatusBar style = "auto" / >
+  </View>
   );
 }
 
@@ -19,4 +19,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
 });
