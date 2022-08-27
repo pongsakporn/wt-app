@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, ImageBackground, StyleSheet } from 'react-native';
+import { ImageBackground, StyleSheet } from 'react-native';
 import Forecast from './Forecast';
 
 export default function Weather(props) {
@@ -11,8 +11,7 @@ export default function Weather(props) {
 
     return (
         <View>
-        <ImageBackground source={require('../bg.jpg')} 
-        style={styles.backdrop}>
+        <ImageBackground source={require('../bg.jpg')} style={styles.backdrop}>
         <Forecast {...forecastInfo} />
         </ImageBackground>
         </View>
